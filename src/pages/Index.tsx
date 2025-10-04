@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
+import ImageCarousel from "@/components/ImageCarousel";
+import InteractiveHero from "@/components/InteractiveHero";
 import AboutSection from "@/components/AboutSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import Footer from "@/components/Footer";
@@ -86,7 +87,8 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <main>
-        <HeroSection />
+        <ImageCarousel />
+        <InteractiveHero />
         <AboutSection />
         <FeaturesSection />
         
