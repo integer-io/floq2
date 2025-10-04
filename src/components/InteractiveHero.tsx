@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, Play, CheckCircle, Sparkles, Zap, Award } from "lucide-react";
+import { ArrowUpRight, Play, CircleCheck as CheckCircle, Sparkles, Zap, Award } from "lucide-react";
 import heroImage from "@/assets/hero-pumps.jpg";
 
 const InteractiveHero = () => {
