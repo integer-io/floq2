@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CareerApplicationForm from "@/components/CareerApplicationForm";
 import { Phone, Mail, MapPin, Briefcase, Clock, Users, Star, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Banner } from '../components/ui/banner';
@@ -262,21 +263,13 @@ const Careers = () => {
                         Salary: {job.salary}
                       </div>
                     </div>
-                    
+
                     <div className="flex flex-col gap-3 lg:ml-6">
-                      <Button 
-                        className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white animate-pulse shadow-lg"
-                        onClick={() => window.location.href = 'tel:+917358755442'}
-                      >
-                        <Phone className="w-4 h-4 mr-2 animate-bounce" />
-                        Call Now
-                      </Button>
-                      <Button 
-                        variant="outline" 
-                        className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white"
+                      <Button
+                        className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                         onClick={() => setSelectedJob(job)}
                       >
-                        View Details
+                        Apply Now
                         <ArrowRight className="w-4 h-4 ml-2" />
                       </Button>
                     </div>
@@ -352,6 +345,13 @@ const Careers = () => {
           </div>
         </section>
       </main>
+
+      <CareerApplicationForm
+        job={selectedJob}
+        isOpen={!!selectedJob}
+        onClose={() => setSelectedJob(null)}
+      />
+
       <Footer />
     </div>
   );

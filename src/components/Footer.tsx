@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import { Facebook, Linkedin, Instagram } from 'lucide-react';
 import floqLogo from '@/assets/floq-logo.png';
 
 const Footer = () => {
@@ -26,21 +26,15 @@ const Footer = () => {
 
             {/* Social Media */}
             <div className="flex space-x-[1rem]">
-              <div className="w-[3rem] h-[3rem] bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors cursor-pointer">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-[3rem] h-[3rem] bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors">
                 <Facebook className="w-[1.5rem] h-[1.5rem] text-white" />
-              </div>
-              <div className="w-[3rem] h-[3rem] bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors cursor-pointer">
-                <Twitter className="w-[1.5rem] h-[1.5rem] text-white" />
-              </div>
-              <div className="w-[3rem] h-[3rem] bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors cursor-pointer">
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-[3rem] h-[3rem] bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors">
                 <Linkedin className="w-[1.5rem] h-[1.5rem] text-white" />
-              </div>
-              <div className="w-[3rem] h-[3rem] bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors cursor-pointer">
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-[3rem] h-[3rem] bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors">
                 <Instagram className="w-[1.5rem] h-[1.5rem] text-white" />
-              </div>
-              <div className="w-[3rem] h-[3rem] bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors cursor-pointer">
-                <Youtube className="w-[1.5rem] h-[1.5rem] text-white" />
-              </div>
+              </a>
             </div>
           </div>
 
@@ -48,26 +42,26 @@ const Footer = () => {
           <div>
             <h3 className="text-orange-500 text-xl font-bold mb-6">QUICK LINKS</h3>
             <div className="space-y-3">
-              <div className="flex items-center space-x-2 hover:text-orange-500 transition-colors cursor-pointer">
+              <a href="/about" className="flex items-center space-x-2 hover:text-orange-500 transition-colors">
                 <span className="text-orange-500">↗</span>
                 <span>About Us</span>
-              </div>
-              <div className="flex items-center space-x-2 hover:text-orange-500 transition-colors cursor-pointer">
+              </a>
+              <a href="/products" className="flex items-center space-x-2 hover:text-orange-500 transition-colors">
                 <span className="text-orange-500">↗</span>
-                <span>Team</span>
-              </div>
-              <div className="flex items-center space-x-2 hover:text-orange-500 transition-colors cursor-pointer">
+                <span>Products</span>
+              </a>
+              <a href="/applications" className="flex items-center space-x-2 hover:text-orange-500 transition-colors">
                 <span className="text-orange-500">↗</span>
-                <span>FAQ</span>
-              </div>
-              <div className="flex items-center space-x-2 hover:text-orange-500 transition-colors cursor-pointer">
+                <span>Applications</span>
+              </a>
+              <a href="/careers" className="flex items-center space-x-2 hover:text-orange-500 transition-colors">
                 <span className="text-orange-500">↗</span>
-                <span>Projects</span>
-              </div>
-              <div className="flex items-center space-x-2 hover:text-orange-500 transition-colors cursor-pointer">
+                <span>Careers</span>
+              </a>
+              <a href="/contact" className="flex items-center space-x-2 hover:text-orange-500 transition-colors">
                 <span className="text-orange-500">↗</span>
                 <span>Contact us</span>
-              </div>
+              </a>
             </div>
           </div>
 

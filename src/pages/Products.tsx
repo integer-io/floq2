@@ -116,45 +116,54 @@ const Products = () => {
       />
 
       <main className="py-[4rem] px-[1rem]">
-        <div className="max-w-[60rem] mx-auto">
-          {/* Show only the first product */}
-          {products.length > 0 && (
-            <Card className="overflow-hidden bg-white shadow-xl">
-              <div className="text-center">
-                {/* Product Image */}
-                <div className="relative h-[20rem] overflow-hidden">
+        <div className="max-w-[80rem] mx-auto">
+          <nav className="flex items-center gap-[0.5rem] text-[0.875rem] mb-[2rem] flex-wrap">
+            <a href="/" className="text-gray-600 hover:text-orange-500 transition-colors flex items-center gap-[0.25rem]">
+              <Home className="w-[1rem] h-[1rem]" />
+              Home
+            </a>
+            <span className="text-gray-400">/</span>
+            <span className="text-gray-800 font-medium">Products</span>
+          </nav>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
+            {products.map((product) => (
+              <Card key={product.id} className="overflow-hidden bg-white shadow-xl hover:shadow-2xl transition-all duration-300 group">
+                <div className="relative h-[15rem] overflow-hidden">
                   <img
-                    src={products[0].image}
-                    alt={products[0].name}
-                    className="w-full h-full object-cover"
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className="absolute top-[1rem] right-[1rem] bg-orange-500 text-white px-[0.75rem] py-[0.25rem] rounded-full text-[0.75rem] font-bold">
+                    2 Year Warranty
+                  </div>
                 </div>
 
-                {/* Product Content */}
-                <div className="p-[2rem] space-y-[1.5rem]">
-                  <div className="text-[0.875rem] font-medium text-orange-600 mb-[0.5rem]">
-                    {products[0].category}
+                <div className="p-[1.5rem] space-y-[1rem]">
+                  <div className="text-[0.75rem] font-medium text-orange-600">
+                    {product.category}
                   </div>
-                  <h3 className="text-[2rem] font-bold text-gray-800 mb-[1rem]">
-                    {products[0].name}
+                  <h3 className="text-[1.25rem] font-bold text-gray-800 leading-tight group-hover:text-orange-600 transition-colors">
+                    {product.name}
                   </h3>
-                  
-                  <p className="text-gray-600 leading-[1.6] max-w-[40rem] mx-auto">
-                    {products[0].description}
+
+                  <p className="text-gray-600 leading-[1.6] text-[0.875rem] line-clamp-3">
+                    {product.description}
                   </p>
 
-                  <Button 
-                    className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-[2rem] py-[0.75rem] text-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                    onClick={() => window.location.href = `/product/${products[0].id}`}
+                  <Button
+                    className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white py-[0.75rem] font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+                    onClick={() => window.location.href = `/product/${product.id}`}
                   >
                     Learn More
-                    <ChevronRight className="w-[1.25rem] h-[1.25rem] ml-[0.5rem]" />
+                    <ChevronRight className="w-[1rem] h-[1rem] ml-[0.5rem]" />
                   </Button>
                 </div>
-              </div>
-            </Card>
-          )}
+              </Card>
+            ))}
+          </div>
         </div>
       </main>
 

@@ -9,82 +9,82 @@ const applications = [
   {
     title: "Water Treatment",
     description: "Advanced pumping solutions for water treatment facilities",
-    image: "/applications/water-treatment.jpg",
+    image: "https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Industrial Processing",
     description: "High-performance pumps for industrial fluid handling",
-    image: "/applications/industrial.jpg",
+    image: "https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Agriculture",
     description: "Reliable irrigation and farming pump systems",
-    image: "/applications/agriculture.jpg",
+    image: "https://images.pexels.com/photos/974314/pexels-photo-974314.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Mining",
     description: "Heavy-duty pumps for mining operations",
-    image: "/applications/mining.jpg",
+    image: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Chemical Processing",
     description: "Specialized pumps for chemical industries",
-    image: "/applications/chemical.jpg",
+    image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Power Generation",
     description: "Critical pumping solutions for power plants",
-    image: "/applications/power.jpg",
+    image: "https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Oil & Gas",
     description: "High-pressure pumps for oil and gas applications",
-    image: "/applications/oil-gas.jpg",
+    image: "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Municipal",
     description: "Public water supply and wastewater management",
-    image: "/applications/municipal.jpg",
+    image: "https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Food & Beverage",
     description: "Sanitary pumps for food processing",
-    image: "/applications/food.jpg",
+    image: "https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Pharmaceutical",
     description: "Precision pumps for pharmaceutical manufacturing",
-    image: "/applications/pharma.jpg",
+    image: "https://images.pexels.com/photos/3825527/pexels-photo-3825527.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Construction",
     description: "Dewatering and concrete pumping solutions",
-    image: "/applications/construction.jpg",
+    image: "https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Marine",
     description: "Seawater and marine industry pumps",
-    image: "/applications/marine.jpg",
+    image: "https://images.pexels.com/photos/163726/belgium-antwerp-shipping-ships-163726.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Paper & Pulp",
     description: "Specialized pumps for paper manufacturing",
-    image: "/applications/paper.jpg",
+    image: "https://images.pexels.com/photos/6069325/pexels-photo-6069325.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Textiles",
     description: "Process pumps for textile industry",
-    image: "/applications/textile.jpg",
+    image: "https://images.pexels.com/photos/6069344/pexels-photo-6069344.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "HVAC",
     description: "Circulation pumps for heating and cooling",
-    image: "/applications/hvac.jpg",
+    image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Waste Management",
     description: "Pumps for waste handling and treatment",
-    image: "/applications/waste.jpg",
+    image: "https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?auto=compress&cs=tinysrgb&w=800",
   }
 ];
 
@@ -115,9 +115,6 @@ const Applications = () => {
                 <CardContent>
                   <CardDescription>{app.description}</CardDescription>
                 </CardContent>
-                <CardFooter>
-                  <Button variant="outline" className="w-full">Learn More</Button>
-                </CardFooter>
               </Card>
             ))}
           </div>
